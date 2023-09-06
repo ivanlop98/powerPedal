@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <script src="node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/leaflet-modal@0.3.2/dist/leaflet-modal.min.js"></script>
+</head>
+<body> 
+   
+   
+    <header class="h-[4rem] bg-[#2e3649] flex items-center justify-center">
+        <img class="w-36" src="../static/LogoNav.png"/>
+      </header>
+
+
+      <!-- <div class="h-[87.5vh]" id="map"></div>
+
+      <section  id="section" class="absolute top-12 left-12 justify-center items-center space-y-6"> -->
+        <div class="h-[87.5vh] relative z-[1]" id="map"> </div>
+
+        <section id="MenuPerfil" class="absolute z-[2] bottom-full w-full justify-center items-center ease-in-out duration-300 left-0  ">
+          <div
+        class="flex bg-[#2e3649] font-[Poppins] text-xl text-white items-center border-b-2 border-white p-2 gap-[1rem] hover:bg-[#0acc73]">
+            <img src="static/user.png" class="w-14"/>
+            <p>MI CUENTA</p>
+          </div>
+    
+          <div
+        class="flex bg-[#2e3649] font-[Poppins] text-xl text-white items-center border-b-2 border-white p-2 gap-[1rem]  hover:bg-[#0acc73]">
+            <img src="static/notificacion.png" class="w-14"/>
+            <p>CENTRO DE NOTIFICACIONES</p>
+          </div>
+    
+          <div
+          class="flex bg-[#2e3649] font-[Poppins] text-xl text-white items-center border-b-2 p-2 gap-[1rem] hover:bg-[#ef4444]">
+            <img src="static/cerrar-sesion.png" class="w-14"/>
+            <a href="/logIn">CERRAR SESION</a>
+          </div>
+        </section>
+
+
+        <section id="MenuTarjeta" class="absolute z-[2] bottom-full w-full justify-center items-center ease-in-out duration-300 left-0  ">
+            <div
+          class="flex bg-[#2e3649] font-[Poppins] text-xl text-white items-center border-b-2 border-white p-2 gap-[1rem]  hover:bg-[#0acc73]">
+              <img src="static/tarjeta-de-credito.png" class="w-14"/>
+              <p>ASOCIAR TARJETA</p>
+            </div>
+      
+            <div
+          class="flex bg-[#2e3649] font-[Poppins] text-xl text-white items-center border-b-2 border-white p-2 gap-[1rem]  hover:bg-[#0acc73]">
+              <img src="static/borrarcard.png" class="w-14"/>
+              <p>ELIMINAR TARJETAS</p>
+            </div>
+      
+            <div
+            class="flex bg-[#2e3649] font-[Poppins] text-xl text-white items-center border-b-2 p-2 gap-[1rem] hover:bg-[#0acc73]">
+              <img src="static/flujo.png" class="w-14"/>
+              <p>VER MOVIMIENTOS</p>
+            </div>
+          </section>
+
+        
+
+      <footer>
+        <ul class="flex bg-[#2e3649] h-[4rem] justify-around  items-center">
+          <li>
+            <img
+              class="h-10 cursor-pointer"
+              src="../static/bicicleta-de-carretera.png"
+              alt="bicicleta-de-carretera"
+            />
+          </li>
+          <li class="cursor-pointer">
+            <a href="#">
+              <img id="btn-tarjeta" class="h-9" src="../static/tarjeta-de-credito.png" alt="usuario" />
+            </a>
+          </li>
+          <li>
+            <img
+              class="h-10 cursor-pointer"
+              src="../static/cerrar-con-llave.png"
+              alt="cerrar-con-llave"
+            />
+          </li>
+          <li class="cursor-pointer">
+            <a href="#">
+              <img id="btn-perfil" class="h-9" src="../static/usuario.png" alt="usuario" />
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <script src="../static/sinbici.js"></script>
+</body>
+</html>

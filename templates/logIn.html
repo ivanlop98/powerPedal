@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;400;600;800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+  </head>
+  <body class="bg-[#2e3649]">
+    <header>
+      <nav class="flex justify-around items-center">
+        <div>
+            <img class="w-60" src="../static/LogoNav.png"/>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flex justify-center items-center h-screen">
+        <form
+          action=""
+          method=""
+          class="flex flex-col space-y-9 w-96 h-5/6 items-center"
+        >
+          <div class="text-white font-[Poppins] text-3xl">
+            <a href="#">LOGIN</a>
+          </div>
+
+          <div class="flex flex-col space-y-9 items-center">
+            <div>
+              <label for="e-mail" class="text-l text-white font-[Poppins]"
+                >Correo electronico:</label
+              >
+              <input
+                type="email"
+                name="e-mail"
+                id="e-mail"
+                class="text-white border-b-2 focus:outline-none focus:border-[#0acc73] bg-transparent h-[4vh] hover:drop-shadow w-96 text-sm"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div>
+              <label for="contraseña" class="text-l text-white font-[Poppins]"
+                >Ingrese su contraseña:</label
+              >
+              <input
+                type="password"
+                name="contraseña"
+                id="contraseña"
+                class="text-white border-b-2 focus:outline-none focus:border-[#0acc73] bg-transparent h-[4vh] hover:drop-shadow w-96 text-sm"
+              />
+            </div>
+
+            <div class="flex justify-end">
+              <button
+                type="submit"
+                class="text-xs text-white font-[Poppins] text-[#0acc73] hover:text-[#0acc73]"
+              >
+                Olvidaste tu contraseña
+              </button>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center mt-[ml-3] text-gray-100 ">
+            <a
+        
+              class=" text-xl flex justify-center items-center text-[#2e3649] font-[Poppins] bg-[#0acc73] hover:bg-[#0acc73] h-12 w-40 rounded-full hover:text-white"  href="/"
+            >
+              Ingresar
+            </a>
+          </div>
+
+          <div class="flex space-y-9">
+            <a href="/signUp"
+              class="text-lg text-white font-[Poppins] text-[#0acc73] hover:text-[#0acc73]"
+            >
+              No tienes cuenta? Crea tu cuenta
+            <a/>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="../static/index.js"></script>
+  </body>
+</html>
